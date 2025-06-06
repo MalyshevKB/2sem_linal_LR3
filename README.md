@@ -46,9 +46,9 @@ class Qubit:
    ```  
    - Математическое представление:  
     ```math
-    Z = \begin{pmatrix}1 && 0 \\0 && -1\end{pmatrix}
+      Z = \begin{pmatrix}1 && 0 \\0 && -1\end{pmatrix}
     ```
-   - Действие: $(Z|0\rangle = |0\rangle), (Z|1\rangle = -|1\rangle)$.  
+   - Действие: $(Z|0 \rangle = |0 \rangle), (Z|1 \rangle = -|1 \rangle)$.  
 
 **Применение гейтов**:  
 ```python
@@ -67,7 +67,7 @@ class TwoQubit:
 ```  
 - **Начальное состояние**: 
 ```math
-(|00\rangle = \begin{bmatrix} 1 \\ 0 \\ 0 \\ 0 \end{bmatrix})
+(|00 \rangle = \begin{bmatrix} 1 \\ 0 \\ 0 \\ 0 \end{bmatrix})
 ```
 - **Нормализация**: Аналогично однокубитному случаю.  
 
@@ -86,7 +86,7 @@ cnot_matrix = np.array([
 - Математическое представление:  
   
   ```math
-  CNOT = \begin{pmatrix}
+    CNOT = \begin{pmatrix}
     1 && 0 && 0 && 0 \\
     0 && 1 && 0 && 0 \\
     0 && 0 && 0 && 1 \\
@@ -94,9 +94,9 @@ cnot_matrix = np.array([
     \end{pmatrix} 
     ```
 - **Действие**:  
-  - Если первый кубит $(|0\rangle)$: второй не меняется.  
-  - Если первый кубит $(|1\rangle)$: ко второму применяется X.  
-  Пример: $(\text{CNOT}|10\rangle = |11\rangle)$.  
+  - Если первый кубит $(|0 \rangle)$: второй не меняется.  
+  - Если первый кубит $(|1 \rangle)$: ко второму применяется X.  
+  Пример: $(\text{CNOT}|10 \rangle = |11 \rangle)$.  
 
 **Применение**:  
 ```python
